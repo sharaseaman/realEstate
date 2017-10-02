@@ -1,0 +1,21 @@
+<section class="container"  ng-init="cont.getList()">
+
+        <table class="table table-hover">
+                <caption>Homes For Rent</caption>
+                <thead>
+                        <tr>
+                                <th>Cost</th>
+                                <th>Square Footage</th>
+                                <th>Location</th>
+                        </tr>
+                </thead>
+                <tbody ng-repeat="house in cont.rent.list">
+                        <tr>
+                                <td>${{house.rent}}</td>
+                                <td>{{house.sqft}} sqft</td>
+                                <td>{{house.city}}</td>
+                        </tr>
+                </tbody>
+        </table>
+
+</section>

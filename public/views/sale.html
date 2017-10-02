@@ -1,0 +1,23 @@
+<div  ng-init="cont.getList()">
+<section class="container">
+
+        <table class="table table-hover">
+                <caption>Homes For Sale</caption>
+                <thead>
+                        <tr>
+                                <th>Cost</th>
+                                <th>Square Footage</th>
+                                <th>Location</th>      
+                        </tr>
+                </thead>
+                <tbody ng-repeat="house in cont.sale.list">
+                        <tr>
+                                <td>${{house.cost}}</td>
+                                <td>{{house.sqft}} sqft</td>
+                                <td>{{house.city}}</td>                         
+                        </tr>
+                </tbody>
+        </table>
+
+</section>
+</div>
